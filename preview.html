@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mobile Shop</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+/* Navbar */
+.navbar {
+    background: #f85606;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.navbar h2 {
+    margin: 0;
+}
+
+.search-box input {
+    padding: 8px;
+    width: 300px;
+    border: none;
+    border-radius: 3px;
+}
+
+.cart {
+    background: white;
+    color: #f85606;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Banner */
+.banner {
+    background: url('https://images.unsplash.com/photo-1511707171634-5f897ff02aa9') no-repeat center;
+    background-size: cover;
+    height: 250px;
+}
+
+/* Section */
+.section {
+    padding: 30px;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+}
+
+/* Product Grid */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.product:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.product img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.price {
+    color: #f85606;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+button {
+    background: #f85606;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button:hover {
+    background: #d94e05;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="navbar">
+    <h2>Mobile Shop</h2>
+    <div class="search-box">
+        <input type="text" placeholder="Search for products...">
+    </div>
+    <div class="cart">Cart 🛒</div>
+</div>
+
+<div class="banner"></div>
+
+<div class="section">
+    <h2>Latest Mobiles</h2>
+    <div class="products">
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1605236453806-6ff36851218e">
+            <h3>iPhone 14</h3>
+            <div class="price">$999</div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97">
+            <h3>Samsung Galaxy S23</h3>
+            <div class="price">$850</div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1580910051074-3eb694886505">
+            <h3>Xiaomi Redmi Note</h3>
+            <div class="price">$300</div>
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+</div>
+
+<div class="section">
+    <h2>Mobile Accessories</h2>
+    <div class="products">
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1585386959984-a41552231658">
+            <h3>Wireless Earbuds</h3>
+            <div class="price">$50</div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1586953208448-b95a79798f07">
+            <h3>Power Bank</h3>
+            <div class="price">$25</div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1587574293340-38b6b9e5d52f">
+            <h3>Phone Case</h3>
+            <div class="price">$15</div>
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+</div>
+
+<div class="footer">
+    © 2026 Mobile Shop | All Rights Reserved
+</div>
+
+</body>
+</html>
